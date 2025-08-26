@@ -4,7 +4,7 @@
 
 
 import math
-
+import random
 
 nimi = input("Anna nimesi: ")
 tervehdys = "Moi " + nimi + "!"
@@ -85,30 +85,34 @@ print("Massa nykymittojen mukaan: ")
 print(f"{kilogrammat} kilogrammaa ja {grammat:.3f} grammaa.")
 
 
+'''
+Kirjoita ohjelma, joka 
+
+    arpoo ja tulostaa kaksi erilaista numerolukon koodia:
+
+    kolmenumeroisen koodin, arpoo numeromerkki on väliltä 0..9
+
+    nelinumeroisen koodin, jonka kukin numeromerkki on väliltä 1..6.
+
+print
+
+koodi_1: 123
+
+koodi_2: 2341
 
 '''
 
-Massa nykymittojen mukaan:
-29 kilogrammaa ja 545.95 grammaa. 
+kolme_yksi = random.randint(0, 9)
+kolme_kaksi = random.randint(0, 9)
+kolme_kolme = random.randint(0, 9)
 
-    
-Anna leiviskät.
-3
-Anna naulat.
-9
-Anna luodit.
-13,3
-29545,95
-    
-    
-    
-    13,3 grammaa = 1 luoti
-    32 luotia = naula
-    20 naulaa = 1 leiviskä
-    
-'''
+nelja_yksi = random.randint(1, 6)
+nelja_kaksi = random.randint(1, 6)
+nelja_kolme = random.randint(1, 6)
+nelja_nelja = random.randint(1, 6)
 
+koodi_1 = kolme_yksi, kolme_kaksi, kolme_kolme
+koodi_2 = nelja_yksi, nelja_kaksi, nelja_kolme, nelja_nelja
 
-
-
-
+print (f"koodi 1 :{koodi_1}")
+print (f"koodi 2 :{koodi_2}")
