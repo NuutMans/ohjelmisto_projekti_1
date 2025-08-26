@@ -28,7 +28,7 @@ input_salasana = input("Kirjoita minulle salasanasi: ")
 
 if input_salasana == oikea_salasana and input_tunnus == tunnus:
     print ("Tervetuloa!")
-    kehote = input("Oikea salasana. Mitäs sä haluut tehä??")
+    kehote = input("Oikea salasana. Mitäs sä haluut tehä?? Jos haluat moikata kirjoita se: ")
     if kehote == "moikata":
         print("No moro!! :D")
     else:
