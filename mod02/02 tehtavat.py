@@ -35,6 +35,23 @@ suorakulmion_piiri = suorakulmion_leveys + suorakulmion_korkeus + suorakulmion_l
 
 print(f"Tässä on suorakulmion piiri: {suorakulmion_piiri}")
 
+suorakulmion_pinta_ala = suorakulmion_leveys * suorakulmion_korkeus
+print(f"Tässä on suorakulmion pinta-ala: {suorakulmion_pinta_ala}")
+
+# tehtävä 4
+# kysyy 3 kokonaislukua, kertoo tulon, keskiarvon ja summan
+
+luku1 = float(input("Kirjoita ensimmäinen kokonaisluku: "))
+luku2 = float(input("Kirjoita toka luku: "))
+luku3 = float(input("Kirjoita kolmas luku: "))
+
+summa = luku1 + luku2 + luku3
+keskiarvo = summa / 3
+
+
+print (f"Tässä on lukujen tulo: {luku1 * luku2 * luku3}")
+print (f"Tässä on lukujen keskiarvo: {keskiarvo}")
+print (f"Tässä on lukujen summa: {summa}")
 
 
 
