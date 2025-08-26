@@ -37,14 +37,21 @@ elif laivan_hytti == C:
 
 # Tehtävä 3, Kirjoita ohjelma, joka kysyy käyttäjän biologisen sukupuolen ja hemoglobiiniarvon (g/l).
 # Ohjelma ilmoittaa, onko hemoglobiiniarvo alhainen, normaali vai korkea.
-# Naisen normaali hemoglobiiniarvo on välillä 117-175 g/l.
-# Miehen normaali hemoglobiiniarvo on välillä 134-195 g/l.
 
+sukupuoli = input("Kirjoita sukupuoli (nainen tai mies): ")
 
-sukupuoli = float(input("Kirjoita sukupuoli (nainen tai mies): "))
+hemoglobiini = float(input("Kirjoita hemoglobiiniarvo: "))
 
+if sukupuoli == "nainen" and hemoglobiini >= 117 and hemoglobiini <= 175:
+    print("Hemoglobiiniarvosi on normaali")
+elif sukupuoli == "nainen" and hemoglobiini < 117:
+    print("Hemoglobiiniarvosi on alhainen")
+elif sukupuoli == "nainen" and hemoglobiini > 175:
+    print("Hemoglobiiniarvosi on korkea")
 
-
-
-
-
+if sukupuoli == "mies" and hemoglobiini >= 134 and hemoglobiini <= 195:
+    print("Hemoglobiiniarvosi on normaali")
+elif sukupuoli == "mies" and hemoglobiini < 134:
+    print("Hemoglobiiniarvosi on alhainen")
+elif sukupuoli == "mies" and hemoglobiini > 195:
+    print("Hemoglobiiniarvosi on korkea")
