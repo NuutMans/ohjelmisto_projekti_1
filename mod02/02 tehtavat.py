@@ -15,7 +15,7 @@ print(tervehdys)
 ympyran_sade = float(input("Anna ympyrälle säde: ")) # esim 8
 pinta_ala = math.pi * (ympyran_sade ** 2)
 
-print(f"Tässä on ympyrän pinta-ala: {pinta_ala}")
+print(f"Tässä on ympyrän pinta-ala: {pinta_ala:.5f}")
 print("Hyvää työtä!!!")
 
 # ympyrän ala: pi * r^2: 3.14159 * r^2
@@ -28,7 +28,7 @@ print("Hyvää työtä!!!")
 # suorakulmion pinta-ala = kanta * korkeus
 
 suorakulmion_korkeus = float(input("anna suorakulmiolle korkeus: "))
-print(suorakulmion_korkeus)
+
 suorakulmion_leveys = float(input("Anna suorakulmiolle leveys: "))
 
 suorakulmion_piiri = suorakulmion_leveys + suorakulmion_korkeus + suorakulmion_leveys + suorakulmion_korkeus
@@ -47,11 +47,68 @@ luku3 = float(input("Kirjoita kolmas luku: "))
 
 summa = luku1 + luku2 + luku3
 keskiarvo = summa / 3
+tulo = luku1 * luku2 * luku3
 
-
-print (f"Tässä on lukujen tulo: {luku1 * luku2 * luku3}")
-print (f"Tässä on lukujen keskiarvo: {keskiarvo}")
+print (f"Tässä on lukujen tulo: {tulo}")
+print (f"Tässä on lukujen keskiarvo: {keskiarvo:.3f}")
 print (f"Tässä on lukujen summa: {summa}")
+
+
+
+# Tehtävä 5
+# ohjelma, joka kysyy käyttäjältä massan keskiaikaisten mittojen mukaan leivisköinä, nauloina ja luoteina.
+# Ohjelma muuntaa syötteen täysiksi kilogrammoiksi ja grammoiksi sekä ilmoittaa tuloksen käyttäjälle.
+
+
+'''    
+    Yksi leiviskä on 20 naulaa. = yksi leiviskä on 8512 g   | 8 kilogrammaa ja 512 grammaa
+    Yksi naula on 32 luotia. = yksi naula on  g   | 0 kilogrammaa ja 425,6 grammaa
+    
+    Yksi luoti on 13,3 grammaa.   | 0 kilogrammaa ja 13,3 grammaa
+    1kg on 1000 grammaa
+'''
+
+leiviska = float(input("Anna leiviskät: "))
+naula = float(input("Anna naulat: "))
+luoti = float(input("Anna luodit: "))
+
+leiviska_g = leiviska * 8512
+naula_g = naula * 425.6
+luoti_g = luoti * 13.3
+
+kokonaispaino = leiviska_g + naula_g + luoti_g
+
+kilogrammat = kokonaispaino // 1000
+grammat =  kokonaispaino - 1000 * kilogrammat
+
+print("Massa nykymittojen mukaan: ")
+print(f"{kilogrammat} kilogrammaa ja {grammat:.3f} grammaa.")
+
+
+
+'''
+
+Massa nykymittojen mukaan:
+29 kilogrammaa ja 545.95 grammaa. 
+
+    
+Anna leiviskät.
+3
+Anna naulat.
+9
+Anna luodit.
+13,3
+29545,95
+    
+    
+    
+    13,3 grammaa = 1 luoti
+    32 luotia = naula
+    20 naulaa = 1 leiviskä
+    
+'''
+
+
 
 
 
