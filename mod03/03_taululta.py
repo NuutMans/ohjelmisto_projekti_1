@@ -21,10 +21,13 @@ else: # toteutuu muissa tapauksissa, eli jo arvottu luku on tasan 50 (tod.näk: 
 print("Ohjelman suoritus if-lauseen jälkeen jatkuu tästä.")
 
 # dummy-kirjautuminen
+
 oikea_salasana = "salamana"
 tunnus = "nuutti"
 input_tunnus = input("Käyttäjätunnus: ")
 input_salasana = input("Kirjoita minulle salasanasi: ")
+
+#voi tehdä while komennolla loopin, jossa kysyy salasanaa ja tunnusta vaikka 3 kertaa. Jos ne on 3 kertaa väärin heittää käyttäjän ulos
 
 if input_salasana == oikea_salasana and input_tunnus == tunnus:
     print ("Tervetuloa!")
