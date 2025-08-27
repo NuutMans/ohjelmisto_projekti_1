@@ -13,6 +13,6 @@ while i > N:
 
         # todo: testaa, toteuttaako piste epäyhtälön x^2+y^2<1
         # jos ehto on totta, kasvata n-laskurin arvoa  --käytä if-lausetta
-
+        # while userinput != ""  -- tarkistaa onko erisuuri (mitä tahansa muuta kuin) tyhjä merkkijono
 
     #todo: laske ja tulosta piin likiarvo käyttäen kaavaa: π≈4n/N
