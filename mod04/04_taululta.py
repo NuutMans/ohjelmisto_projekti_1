@@ -59,3 +59,25 @@ while i < n:
         print("Kolikko jäi pystyyn!!!")
         kolikko_pystyssa_lkm += 1
 print(f"Kolikko jäpi pystyyn {kolikko_pystyssa_lkm} kertaa.")
+
+
+# muokattu noppaesimerkki materiaalista 03
+#noppa1 = 0
+#noppa2 = 0
+#heitot = 0
+pelikerrat = 0
+heittojen_kokonaislkm = 0
+
+app_running = True
+while app_running:
+    noppa1 = noppa2 = heitot = 0 #ketjutettu muuttujat, sama kuin kirjoittaisi muuttujat erikseen kuten yläpuolella
+    while noppa1 != 6 or noppa2 != 6: # jos jompikumpi arvo on alle 6
+        noppa1 = random.randint(1,6)
+        noppa2 = random.randint(1,6)
+        heitot = heitot + 1
+    print(f"Kahteen kutoseen tarvittiin {heitot:d} heittoa.")
+    pelikerrat = pelikerrat + 1
+    heittojen_kokonaislkm = heittojen_kokonaislkm + heitot
+    komento = input("Pelataanko uudestaan (k/e)?")
+
+print(f"Kaksi kutosta saatiin keskimäärin {heittojen_kokonaislkm/pelikerrat}")
