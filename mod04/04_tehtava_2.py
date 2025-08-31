@@ -1,6 +1,6 @@
 # mod 4 tehtävä 2
 
-# TODO: kirjoita ohjelma, joka printtaa tuloksen, kunnes käyttäjä kirjoittaa negatiivisen luvun
+# kirjoita ohjelma, joka printtaa tuloksen, kunnes käyttäjä kirjoittaa negatiivisen luvun
 # Kirjoita ohjelma, joka muuntaa tuumia senttimetreiksi niin kauan kunnes käyttäjä antaa negatiivisen tuumamäärän.
 # Sen jälkeen ohjelma lopettaa toimintansa. 1 tuuma = 2,54 cm
 
