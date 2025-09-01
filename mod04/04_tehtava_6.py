@@ -1,3 +1,4 @@
+
 # mod04 tehtävä 6
 import random
 # Kaikkien pisteiden määrä N

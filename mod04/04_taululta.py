@@ -12,15 +12,15 @@ print("silmukan suoritus loppui")
 
 # iteraattori ja while, iteraattori tarkoittaa kasvavaa tai pienenevää arvoa
 # arvo on kovakoodattu "hard coded", voi kysyä myös käyttäjältä: toistojen_lkm = int(input("Montako kertaa tervehditään: "))
-toistojen_lkm = 10
+toistojen_lkm = 1000
 i = 0
 
 while i < toistojen_lkm: #niin kauan kuin iteraattorin arvo on pienempi kuin 0, toistetaan tätä
     print(f"iteroiva silmukka, i:n arvo: {i}")
-    i = i + 1
+    i = i + 3
     # lyhyt tapa: i += 1
 
-print(f"i:n arvo lopuksi {i}")
+print(f"i:n arvo lopuksi: {i}")
 
 
 # komentorivisovellus / komentokehotesovellus
@@ -40,7 +40,7 @@ while app_running:
 
 
 
-#print(f"Arvottu luku: {satunnaisluku}") tätä voi käyttää debuggaamiseen, eli virheiden selvittämiseen
+# print(f"Arvottu luku: {satunnaisluku}") # tätä voi käyttää debuggaamiseen, eli virheiden selvittämiseen
 
 # kolikonheittosimulaattori n ketroo kuinka monta kertaa kolikko jäi pystyyn
 
