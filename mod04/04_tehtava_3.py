@@ -9,7 +9,7 @@ suurin_numero = None
 while app_running:
     luku = input("Kirjoita luku: ")
 
-    if luku == "":
+    if luku == "": # jos laittaa tyhjän merkkijonon looppi loppuu
         print("lopetetaan...")
         app_running = False
     else:
@@ -19,6 +19,7 @@ while app_running:
         if suurin_numero is None or luku_int>suurin_numero:
             suurin_numero = luku_int
 
-print("pienin numero:, ", pienin_numero)
-print("suurin numero:, ", suurin_numero)
+#tulostaa pienimmän ja suurimman luvun, jotka kirjotettiin
+print("pienin numero: ", pienin_numero)
+print("suurin numero: ", suurin_numero)
 
