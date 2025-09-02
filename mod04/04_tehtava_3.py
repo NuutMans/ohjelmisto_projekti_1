@@ -21,3 +21,4 @@ while app_running:
 
 print("pienin numero:, ", pienin_numero)
 print("suurin numero:, ", suurin_numero)
+
