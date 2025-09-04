@@ -1,4 +1,4 @@
-# dummy-kirjautuminen
+# mod04 tehtävä 5
 '''
 
 Kirjoita ohjelma, joka kysyy käyttäjältä käyttäjätunnuksen (python) ja salasanan (rules)
@@ -13,27 +13,22 @@ Edellisessä tapauksessa tulostetaan Tervetuloa ja jälkimmäisessä Pääsy ev�
 
 oikea_salasana = "rules"
 oikea_tunnus = "python"
-input_tunnus = input("Käyttäjätunnus: ")
-input_salasana = input("Kirjoita minulle salasanasi: ")
-app_running = True
-login_tries = 5
+yritykset = 5
 
-#voi tehdä while komennolla loopin, jossa kysyy salasanaa ja tunnusta vaikka 3 kertaa. Jos ne on 3 kertaa väärin heittää käyttäjän ulos
-while app_running and login_tries > 0:
 
-    if input_salasana == oikea_salasana and input_tunnus == oikea_tunnus:
+while yritykset > 0:
+
+    input_tunnus = input("Käyttäjätunnus: ")
+    input_salasana = input("Kirjoita minulle salasanasi: ")
+    yritykset -= 1
+
+    if input_salasana == oikea_salasana and input_tunnus == oikea_tunnus and yritykset > 0:
         print ("Tervetuloa!")
-        login_tries -= 1
-        app_running = False
-    else:
-        if app_running == False or login_tries > 0:
-            login_tries -= 1
-            print("Väärä salasana! Yritä uudelleen. Yrityksiä jäljellä:", login_tries)
+        break
 
-# koodi toimii tällä hetkellä niin, että looppi menee yksi kerrallaan lopuun asti 4, 3, 2, 1 yritystä jäljellä.
-# mutta ei kysy uudelleen tunnusta tai salasanaa
-# todo: mitesn saan koodin niin (loopille?) että jokaisella kerralla kysyy salasanaa uudelleen?
+    elif input_salasana != oikea_salasana or input_tunnus != oikea_tunnus and yritykset > 0:
+            print(f"Väärä salasana! Yrityksiä jäljellä: {yritykset}")
 
-#if login_tries == 0:
-#login_tries -= 1
-
+    elif yritykset <= 0:
+        print("Salasana meni liian monta kertaa väärin. Ohjelma päättyy...")
+        break
