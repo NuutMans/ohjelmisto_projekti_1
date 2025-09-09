@@ -221,3 +221,26 @@ yhteystiedot = {
     },
 }
 print(f"Amberin puhelinnumero {yhteystiedot["Amber"]["puh"]}")
+
+oppilaat2 = {"Amber": 43,
+            "Bonny": 23,
+            "Clint": 57,
+            "Daniel": 34,
+            "Eemeli": 20,
+            "Emma" : [1, 2, 3, 4]
+}
+
+# lisätään uusi oppilas
+# llisätään avaimen avulla, mikäli avain jo löytyy niin tämä päivittää tiedot
+
+oppilaat2 ["Juuso"] = 22
+oppilaat2["Amber"] = [22, 53, "muutin tämän"]
+oppilaat2["Amber"] = "Morooo"
+oppilaat2["Amber"] = 66
+print(oppilaat2)
+
+# muokkaa jos on olemassa, muuten lisää
+oppilaat2.update({"Timo": 88, "Laura": 75, "Daniel": 33})
+print(oppilaat2)
+
+
