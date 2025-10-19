@@ -1,12 +1,7 @@
-
-
-
 import random
-
 
 def number(sides):
     return random.randint(1, sides)
-
 
 sides = int(input("Anna nopan sivujen määrä: "))
 
