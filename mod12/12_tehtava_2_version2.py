@@ -41,11 +41,6 @@ except requests.exceptions.RequestException as e:
     print ("Hakua ei voitu suorittaa.")
 
 
-#TODO
-# kysyy paikkakunnan nimen
-# tulostaa siitä vastaavan säätilan tekstin
-# lämpötilan Celsius-asetina
-
 
 
 
