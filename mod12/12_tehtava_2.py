@@ -14,7 +14,7 @@ try:
     if vastaus.status_code==200:
         data = vastaus.json()
         print(json.dumps(data, indent=2))
-        print(f"Sää kohteessa {city_name} on {data["weather"][0]["description"]}")
+        print(f"Sää kohteessa {city_name} on {data['weather'][0]['description']}")
 
 except requests.exceptions.RequestException as e:
     print ("Hakua ei voitu suorittaa.")
